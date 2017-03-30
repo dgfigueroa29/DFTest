@@ -1,0 +1,28 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimaryDark"
+	tools:context="com.boa.dftest.activities.PhotoActivity">
+	<ImageView
+		android:id="@+id/ivPhoto"
+		android:contentDescription="@string/app_name"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:keepScreenOn="true"
+		android:src="@mipmap/ic_launcher" />
+	<RelativeLayout
+		android:id="@+id/fullscreen_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+		<ImageView
+			android:id="@+id/ivClose"
+			android:contentDescription="@string/app_name"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_clear_white_24dp"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+</FrameLayout>
